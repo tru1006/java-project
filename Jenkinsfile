@@ -1,4 +1,5 @@
-pipeline {
+
+peline {
 	agent any
 
 	stages {
@@ -11,7 +12,7 @@ pipeline {
 
 	post {
 		always {
-			archive 'dist/*.jar'
+			archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
 		}
 	}
-}
+}pipeline {
