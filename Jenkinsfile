@@ -1,5 +1,4 @@
-
-peline {
+pipeline {
 	agent any
 
 	stages {
@@ -15,4 +14,4 @@ peline {
 			archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
 		}
 	}
-}pipeline {
+}
